@@ -15,3 +15,4 @@
   - We used the same autoencoder architecture but adapted it for CT images of lungs
 - The latent space is not very dense in this application because the data for lung CT scans with/without COVID is not as high in quantity or diversity as other datasets (i.e. celebrity face dataset)
 - This latent space explorer can be used as a baseline to compare generated images from the GAN to real CT scans
+- The model is saved under ```model/LatentSpace.ipynb```
