@@ -1,6 +1,4 @@
-# CS-168-COVID 
-
-[insert cool name here]
+# COVID-19-Affected Lung CT Generative Network
 
 ## A Generational Adversarial Network (GAN) to generate CT scans of lungs with COVID-19
 
