@@ -14,12 +14,9 @@
 - Demo of our final model
 - Latent Space Widget for visualization
 - Generated images from the GAN
-- **Project Resources** containing the dataset and our final models can be found **[here](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)**
--- Models (.h5 files ready to be loaded and used)
--- Data (from https://github.com/UCSD-AI4H/COVID-CT)
-
-
-
+- **Project Resources** containing the dataset and our final models can be found **[here](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)**. 
+  - Models (.h5 files ready to be loaded and used)
+  - Data (from https://github.com/UCSD-AI4H/COVID-CT)
 
 # Usage
 ## To Create/Train the COVID-19-Affected Lung CT Generative Network
