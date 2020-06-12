@@ -24,7 +24,7 @@
 - Model definition and training is located in [COVID_GAN.ipynb](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/COVID_GAN.ipynb) or [COVID_GAN.py](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/COVID_GAN.py).  
 - To run, **clone this repo**, and **download the data set** available **[here](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)**.  
 - Make sure the above-mentioned script and the zip file of data are in the same directory.   
-- Before running, make sure all dependencies are installed by running `pip install -r requirements.txt` in terminal. 
+- Before running, make sure all dependencies are installed by running `pip3 install -r requirements.txt` in terminal. 
 - Ensure the hyperparameter `load_data_from_Google_Drive` is set to `False`.  
 - The program will define a new model and train it with the data provided and hyperparameters specified and changeable in [COVID_GAN.ipynb](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/COVID_GAN.ipynb) or [COVID_GAN.py](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/COVID_GAN.py).  
 - Run the program in terminal with `python3 COVID_GAN.py` or `jupyter notebook COVID_GAN.ipynb` or with any other framework of your choosing.  
@@ -42,7 +42,7 @@
 - Demo is located at [Demo_COVID_GAN.ipynb](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/Demo_COVID_GAN.ipynb).  
 - Download both the **dataset** and `.h5` files of the **final models** are downloaded from **[project resources](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)**.  
 - Ensure the zipped dataset and final models are in the same directory as `Demo_COVID_GAN.ipynb`.  
-- Before running, make sure all dependencies are installed by running `pip install -r requirements.txt`.  
+- Before running, make sure all dependencies are installed by running `pip3 install -r requirements.txt`.  
 - Ensure the hyperparameter `load_data_from_Google_Drive` is set to `False`.  
 - The demo will load in the pre-trained models using the `.h5` files as well as the data to run the demo.  
 - Run the demo with `python3 Demo_COVID_GAN.py` or `jupyter notebook Demo_COVID_GAN.ipynb` or with any other framework of your choosing.  
