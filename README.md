@@ -28,11 +28,27 @@
 - Ensure the hyperparameter `load_data_from_Google_Drive` is set to `False`.  
 - The program will define a new model and train it with the data provided and hyperparameters specified and changeable in [COVID_GAN.ipynb](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/COVID_GAN.ipynb) or [COVID_GAN.py](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/COVID_GAN.py).  
 - Run the program with `python3 COVID_GAN.py` or `jupyter notebook COVID_GAN.ipynb` or with any other framework of your choosing.  
-- The final models will be saved in a new subdirectory called `Saved_Models`.  
+- The final models will be saved in a new subdirectory called "**Saved_Models**".  
 ### Option 2: Running on Google Colabs
 - If you would like to run the model creation/training in Google Colabs, you can make a copy of the Colab **[here](https://colab.research.google.com/drive/1pakKK8eU6wgn_2Wi_ibKGBlUGXY6dO5W?usp=sharing)**. 
 - To obtain the data, go to our **[project resources](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)** and click **Add shortcut to Drive** for the whole folder.  
 - Ensure the hyperparameter `load_data_from_Google_Drive` is set to `True`.  
 - The program will define a new model and train it with the data provided and hyperparameters specified and changeable in the Colab after you've made a copy.  
 - Run the program on Google Colabs.  
-- The final models will be saved in a new directory in "My Drive" called "**COVID_GAN_Saved_Models**".  
+- The final models will be saved in a new directory in "My Drive" called "**COVID_GAN_Saved_Models**". 
+
+## Demo of our final model. 
+### Option 1: Running Locally. 
+- Demo is located at [Demo_COVID_GAN.ipynb](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/COVID_GAN.ipynb).  
+- Download both the **dataset** and `.h5` files of the **final models** are downloaded from **[project resources](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)**.  
+- Ensure the zipped dataset and final models are in the same directory as `Demo_COVID_GAN.ipynb` or `Demo_COVID_GAN.py`.  
+- Before running, make sure all dependencies are installed by running `pip install -r requirements.txt`.  
+- Ensure the hyperparameter `load_data_from_Google_Drive` is set to `False`.  
+- The demo will load in the pre-trained models using the `.h5` files as well as the data to run the demo.  
+- Run the demo with `python3 Demo_COVID_GAN.py` or `jupyter notebook Demo_COVID_GAN.ipynb` or with any other framework of your choosing.  
+### Option 2: Running on Google Colabs. 
+- If you would like to run the demo in Google Colabs, you can make a copy of the Demo Colab **[here](https://colab.research.google.com/drive/1tj4NlMVRMldBgKxGAHzYNbHwh9uULS2_?usp=sharing)**. 
+- To obtain the data and models, go to our **[project resources](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)** and click **Add shortcut to Drive** for the whole folder.  
+- Ensure the hyperparameter `load_data_from_Google_Drive` is set to `True`.  
+- The program will load in the pre-trained models from project resources as well as the data to run the demo.  
+- Run the program on Google Colabs.   
