@@ -27,7 +27,7 @@ from matplotlib import image
 
 # Set to True if you want to load data and save models to Google Drive
 # Set to False if you want to load and save locally.
-load_data_from_Google_Drive = True
+load_data_from_Google_Drive = False
 
 # Names of models to load
 generator = "COVID_CT_GAN_Generator.h5"
