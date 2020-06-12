@@ -39,9 +39,9 @@
 
 ## Demo of our final model. 
 ### Option 1: Running Locally. 
-- Demo is located at [Demo_COVID_GAN.ipynb](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/COVID_GAN.ipynb).  
+- Demo is located at [Demo_COVID_GAN.ipynb](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/Demo_COVID_GAN.ipynb).  
 - Download both the **dataset** and `.h5` files of the **final models** are downloaded from **[project resources](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)**.  
-- Ensure the zipped dataset and final models are in the same directory as `Demo_COVID_GAN.ipynb` or `Demo_COVID_GAN.py`.  
+- Ensure the zipped dataset and final models are in the same directory as `Demo_COVID_GAN.ipynb`.  
 - Before running, make sure all dependencies are installed by running `pip install -r requirements.txt`.  
 - Ensure the hyperparameter `load_data_from_Google_Drive` is set to `False`.  
 - The demo will load in the pre-trained models using the `.h5` files as well as the data to run the demo.  
