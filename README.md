@@ -14,3 +14,5 @@
 - Data (from https://github.com/UCSD-AI4H/COVID-CT)
 - Latent Space Widget for visualization
 - Generated images from the GAN
+
+# Usage
