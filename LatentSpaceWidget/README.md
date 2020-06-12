@@ -5,7 +5,7 @@
 
 ### To run this widget:
 1. Navigate to this directory: ```CS-168-COVID/LatentSpaceWidget```
-2. Start an HTTP server from your terminal: ```python -m http.server 8000```
+2. Start an HTTP server from your terminal: ```python3 -m http.server 8000```
 3. Go to ```localhost:8000``` in your browser
 4. Widget should be loaded!
 
