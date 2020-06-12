@@ -25,21 +25,30 @@ from matplotlib import image
 """# Hyperparameters"""
 
 #### HYPER PARAMETERS
-BUFFER_SIZE = 60000
 BATCH_SIZE = 50
 EPOCHS = 5000
 noise_dim = 100
+BUFFER_SIZE = 60000
+
+# Set to True if you want to load data and save models to Google Drive
+# Set to False if you want to load and save locally.
+load_data_from_Google_Drive = True
+
+# Name of dataset zip file without .zip extension
+Dataset = "CT_COVID"
 
 # We will reuse this seed overtime (so it's easier)
 # to visualize progress in the animated GIF)
 seed = tf.random.normal([1, noise_dim])
 
 """# Mount Google Drive
-To get access to dataset and for model saving
+To get access to dataset and for model saving  
+Runs IF `load_data_from_Google_Drive` is true
 """
 
-from google.colab import drive
-drive.mount('/content/gdrive')
+if load_data_from_Google_Drive:
+  from google.colab import drive
+  drive.mount('/content/gdrive')
 
 """# Unzip and create dataset with images
 
@@ -47,20 +56,25 @@ Extract data from zip file.
 Assumes all images are in "My Drive" that was mounted in the form of a zip file with name (without .zip extension) specified by "Dataset"
 """
 
-Dataset = "CT_COVID"
+if load_data_from_Google_Drive:
+  filepath = "/content/gdrive/My Drive/COVID-19-Affected Lung CT Generative Network"
+  os.system("mkdir -p \"/content/gdrive/My Drive/COVID_GAN_Saved_Models\"")
+  destination = "/gdrive/Data"
+  save_destination = "/content/gdrive/My Drive/COVID_GAN_Saved_Models"
+else:
+  filepath = os.getcwd()
+  destination = os.getcwd()+"/Data"
+  os.system("mkdir -p "+os.getcwd()+"/Saved_Models")
+  save_destination = os.getcwd() + "/Saved_Models"
 
-!pwd
 # Will unzip the files so that you can see them..
-with zipfile.ZipFile("/content/gdrive/My Drive/"+Dataset+".zip","r") as z:
-    z.extractall("/gdrive/Data")
-
-from subprocess import check_output
-#print(check_output(["ls", "/gdrive/Data/CT_COVID"]).decode("utf8"))
+with zipfile.ZipFile(filepath+"/"+Dataset+".zip","r") as z:
+    z.extractall(destination)
 
 """Read image data in from unzipped directory"""
 
 # link used: https://www.pyimagesearch.com/2019/01/14/machine-learning-in-python/
-os.chdir("/gdrive/Data/CT_COVID")
+os.chdir(destination + "/" + Dataset)
 
 path = "*.*"
 data = []
@@ -92,6 +106,8 @@ print(train_images.shape)
 train_images = (train_images - 127.5) / 127.5  # Normalize the images to [-1, 1]
 checker = train_images # np.reshape(train_images, (2164,28,28))
 plt.imshow(checker[5,:,:,0])
+
+os.system("rm -r \""+destination+"\"")
 
 """# Defining the Model"""
 
@@ -244,8 +260,8 @@ def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs, batch_size
 
     # Save the model every 100 epochs
     if epoch%100 == 0:
-      g_model.save("/content/gdrive/My Drive/168/generator_intermediate")
-      d_model.save("/content/gdrive/My Drive/168/discriminator_intermediate")
+      g_model.save(save_destination+"/generator_intermediate.h5")
+      d_model.save(save_destination+"/discriminator_intermediate.h5")
 
     genloss.append(genLoss)
     discloss.append(discLoss)
@@ -284,8 +300,9 @@ g_model = make_generator_model()
 gan_model = make_gan(g_model, d_model)
 generator = train(g_model, d_model, gan_model, train_images, noise_dim, EPOCHS, BATCH_SIZE)
 
-g_model.save("/content/gdrive/My Drive/168/generator_final")
-d_model.save("/content/gdrive/My Drive/168/discriminator_final")
+g_model.save(save_destination+"/generator_final.h5")
+d_model.save(save_destination+"/discriminator_final.h5")
+gan_model.save(save_destination+"/gan_final.h5")
 
 """# Explore Results
 
