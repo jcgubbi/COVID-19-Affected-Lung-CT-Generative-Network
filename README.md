@@ -54,3 +54,10 @@
 - Run the program on Google Colabs.   
 
 *To run the demo for seeing the progression of COVID, follow the same steps as above, except with [Demo_COVID_GAN_Progression.ipynb](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/Demo_COVID_GAN_Progression.ipynb)* 
+
+#### References and Helpful Links:
+[1] [Age Progression/Regression by Conditional Adversarial Encoders](https://arxiv.org/pdf/1702.08423.pdf)  
+[2] [Exploring GAN Latent Space](https://machinelearningmastery.com/how-to-interpolate-and-perform-vector-arithmetic-with-faces-using-a-generative-adversarial-network/)  
+[3] [Deep Convolutional Neural Network Tutorial](https://www.tensorflow.org/tutorials/generative/dcgan)  
+[4] [GAN Tutorial](https://towardsdatascience.com/generative-adversarial-network-gan-for-dummies-a-step-by-step-tutorial-fdefff170391)  
+[5] [Visualize Autoencoders (Latent Space)](https://douglasduhaime.com/posts/visualizing-latent-spaces.html)
