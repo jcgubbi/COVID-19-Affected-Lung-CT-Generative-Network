@@ -10,8 +10,8 @@
 - Eventually create an image-to-image model to see the progression of the disease in one set of lungs
 
 ### Major Components
-- Creation Script (final and iteartions -- .ipynb files)
-- Demo of our final model
+- Creation Script (final and iterations -- .ipynb files)
+- Demo of our final model, and demo of interpolation to model the progression
 - Latent Space Widget for visualization
 - Generated images from the GAN
 - **Project Resources** containing the dataset and our final models can be found **[here](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)**. 
@@ -52,3 +52,5 @@
 - Ensure the hyperparameter `load_data_from_Google_Drive` is set to `True`.  
 - The program will load in the pre-trained models from project resources as well as the data to run the demo.  
 - Run the program on Google Colabs.   
+
+*To run the demo for seeing the progression of COVID, follow the same steps as above, except with [Demo_COVID_GAN_Progression.ipynb](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/Demo_COVID_GAN_Progression.ipynb). 
