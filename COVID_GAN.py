@@ -307,6 +307,7 @@ gan_model.save(save_destination+"/gan_final.h5")
 Line Plots of the generator and discriminator loss over epochs
 """
 
+plt.figure()
 plt.plot(range(EPOCHS), discloss, label='disc loss')
 plt.plot(range(EPOCHS), genloss, label='gen loss')
 plt.xlabel('Epoch')
@@ -316,7 +317,7 @@ plt.legend()
 
 
 """Line Plots of the discrimiantor accuracy on real and fake images over epochs"""
-
+plt.figure()
 plt.plot(range(EPOCHS), accReal, label='accuracy Real')
 plt.plot(range(EPOCHS), accFake, label='accuracy Fake')
 plt.xlabel('Epoch')
@@ -330,5 +331,6 @@ plt.legend()
 noise = tf.random.normal([1, 100])
 generated_image0 = generator.predict(noise)
 
+plt.figure()
 plt.imshow(generated_image0[0, :, :, 0], cmap='gray')
 plt.show()
