@@ -106,8 +106,7 @@ print(train_images.shape)
 """Normalize Images to [-1,1]"""
 
 train_images = (train_images - 127.5) / 127.5  # Normalize the images to [-1, 1]
-checker = train_images # np.reshape(train_images, (2164,28,28))
-plt.imshow(checker[5,:,:,0])
+
 
 os.system("rm -r \""+destination+"\"")
 
@@ -283,13 +282,6 @@ def generate_and_save_images(model, epoch, test_input):
   # This is so all layers run in inference mode (batchnorm).
   predictions = model(test_input, training=False)
 
-  fig = plt.figure(figsize=(4,4))
-
-  for i in range(predictions.shape[0]):
-      plt.subplot(4, 4, i+1)
-      plt.imshow(predictions[i, :, :, 0] * 127.5 + 127.5, cmap='gray')
-      plt.axis('off')
-  plt.show()
 
 """# Perform Training"""
 
@@ -317,7 +309,7 @@ plt.xlabel('Epoch')
 plt.ylim(-1,5)
 plt.ylabel('Loss value') 
 plt.legend()
-plt.show()
+
 
 """Line Plots of the discrimiantor accuracy on real and fake images over epochs"""
 
@@ -327,7 +319,7 @@ plt.xlabel('Epoch')
 plt.ylim(0,1)
 plt.ylabel('Accuracy')
 plt.legend()
-plt.show()
+
 
 """Generate Random Images"""
 
