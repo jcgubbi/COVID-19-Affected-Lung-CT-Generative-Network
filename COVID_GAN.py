@@ -327,10 +327,19 @@ plt.legend()
 
 
 """Generate Random Images"""
-
-noise = tf.random.normal([1, 100])
-generated_image0 = generator.predict(noise)
-
 plt.figure()
+noise = np.random.randn(noise_dim)
+noise = noise.reshape(1, noise_dim)
+generated_image0 = generator.predict(noise)
 plt.imshow(generated_image0[0, :, :, 0], cmap='gray')
+
+f = plt.figure()
+for i in range(1,26):
+  f.add_subplot(5,5, i)
+  noise = np.random.randn(noise_dim)
+  noise = noise.reshape(1, noise_dim)
+  generated_image0 = generator.predict(noise)
+  plt.imshow(generated_image0[0, :, :, 0], cmap='gray')
+  plt.xticks([])
+  plt.yticks([])
 plt.show()
