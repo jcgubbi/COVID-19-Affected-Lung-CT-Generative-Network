@@ -22,9 +22,9 @@ import os
 import cv2
 from matplotlib import image
 
-"""# Hyperparameters"""
-
-#### HYPER PARAMETERS
+#####################
+## Hyperparameters ##
+#####################
 BATCH_SIZE = 50
 EPOCHS = 5000
 noise_dim = 100
@@ -40,6 +40,10 @@ Dataset = "CT_COVID"
 # We will reuse this seed overtime (so it's easier)
 # to visualize progress in the animated GIF)
 seed = tf.random.normal([1, noise_dim])
+########################
+## End of hyperparams ##
+########################
+
 
 """# Mount Google Drive
 To get access to dataset and for model saving  
