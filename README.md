@@ -2,8 +2,6 @@
 
 ## A Generational Adversarial Network (GAN) to generate CT scans of lungs with COVID-19
 
-*A project for UCLA's CS 168 class taught by Professor Scalzo*
-
 ### Premise and Motivation
 - Generate images of lungs with COVID-19 to model progression of COVID-19
 - Use this to expand current datasets, which are limited in quantity
