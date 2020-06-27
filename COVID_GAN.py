@@ -279,6 +279,7 @@ def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs, batch_size
   generate_and_save_images(g_model,
                            n_epochs,
                            seed)
+  print("Training complete")
   return best_g_model
 
 def generate_and_save_images(model, epoch, test_input):
