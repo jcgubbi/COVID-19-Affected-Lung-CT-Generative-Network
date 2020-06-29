@@ -11,7 +11,7 @@
 - Creation Script (final and iterations -- .ipynb files)
 - Demo of our final model, and demo of interpolation to model the progression
 - Latent Space Widget for visualization
-- [Paper Where We Discuss Our GAN](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/Modeling_COVID_19_Using_GANs__Final_Paper_.pdf)
+- [Academic paper where we discuss our GAN](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/Modeling_COVID_19_Using_GANs__Final_Paper_.pdf)
 - Generated images from the GAN
 - **Project Resources** containing the dataset and our final models can be found **[here](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)**. 
   - Models (.h5 files ready to be loaded and used)
