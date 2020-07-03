@@ -53,6 +53,7 @@
 - Run the program on Google Colabs.  
 
 # Project Links
+##### Linked throughout the README
 [Paper](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/Modeling_COVID_19_Using_GANs__Final_Paper_.pdf)  
 [Model Definition and Training Script Colab](https://colab.research.google.com/drive/1pakKK8eU6wgn_2Wi_ibKGBlUGXY6dO5W?usp=sharing)  
 [Demo Colab](https://colab.research.google.com/drive/15NN5DZNQCFVkwy8P16bSpWY11iw2iv03?usp=sharing)  
