@@ -8,7 +8,7 @@
 - Eventually create an image-to-image model to see the progression of the disease in one set of lungs
 
 ### Major Components
-- Creation Script (final and iterations -- .ipynb files)
+- Model Definition and Training Script
 - Demo of our final model, and demo of interpolation to model the progression
 - Latent Space Widget for visualization
 - [Academic paper where we discuss our GAN](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/Modeling_COVID_19_Using_GANs__Final_Paper_.pdf)
@@ -50,7 +50,14 @@
 - To obtain the data and models, go to our **[project resources](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)** and click **Add shortcut to Drive** for the whole folder.  
 - Ensure the hyperparameter `load_data_from_Google_Drive` is set to `True`.  
 - The program will load in the pre-trained models from project resources as well as the data to run the demo.  
-- Run the program on Google Colabs.   
+- Run the program on Google Colabs.  
+
+# Project Links
+[Paper](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/Modeling_COVID_19_Using_GANs__Final_Paper_.pdf)
+[Model Definition and Training Script Colab](https://colab.research.google.com/drive/1pakKK8eU6wgn_2Wi_ibKGBlUGXY6dO5W?usp=sharing)
+[Demo Colab](https://colab.research.google.com/drive/15NN5DZNQCFVkwy8P16bSpWY11iw2iv03?usp=sharing)
+[Project Resources (Final Models and Data)](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)
+
 
 #### References and Helpful Links:
 [1] [Age Progression/Regression by Conditional Adversarial Encoders](https://arxiv.org/pdf/1702.08423.pdf)  
