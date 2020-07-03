@@ -44,7 +44,7 @@
 - Before running, make sure all dependencies are installed by running `pip3 install -r requirements.txt`.  
 - Ensure the hyperparameter `load_data_from_Google_Drive` is set to `False`.  
 - The demo will load in the pre-trained models using the `.h5` files as well as the data to run the demo.  
-- Run the demo with `python3 Demo_COVID_GAN.py` or `jupyter notebook Demo_COVID_GAN.ipynb` or with any other framework of your choosing.  
+- Run the demo with `jupyter notebook Demo_COVID_GAN.ipynb` or with any other framework of your choosing.  
 ### Option 2: Running on Google Colabs. 
 - If you would like to run the demo in Google Colabs, you can make a copy of the Demo Colab **[here](https://colab.research.google.com/drive/15NN5DZNQCFVkwy8P16bSpWY11iw2iv03?usp=sharing)**. 
 - To obtain the data and models, go to our **[project resources](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)** and click **Add shortcut to Drive** for the whole folder.  
