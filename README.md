@@ -11,7 +11,7 @@
 - Model Definition and Training Script
 - Demo of our final model, and demo of interpolation to model the progression
 - Latent Space Widget for visualization
-- [Academic paper where we discuss our GAN](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/Modeling_COVID_19_Using_GANs__Final_Paper_.pdf)
+- [Academic paper where we discuss our GAN](https://github.com/brendon-ng/COVID-19-Affected-Lung-CT-Image-Generative-Network/blob/master/Modeling_COVID_19_Using_GANs_Paper.pdf)
 - Generated images from the GAN
 - **Project Resources** containing the dataset and our final models can be found **[here](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)**. 
   - Models (.h5 files ready to be loaded and used)
@@ -54,7 +54,7 @@
 
 # Project Links
 ##### Linked throughout the README
-[Paper](https://github.com/jcgubbi/COVID-19-Affected-Lung-CT-Generative-Network/blob/master/Modeling_COVID_19_Using_GANs__Final_Paper_.pdf)  
+[Paper](https://github.com/brendon-ng/COVID-19-Affected-Lung-CT-Image-Generative-Network/blob/master/Modeling_COVID_19_Using_GANs_Paper.pdf)  
 [Model Definition and Training Script Colab](https://colab.research.google.com/drive/1pakKK8eU6wgn_2Wi_ibKGBlUGXY6dO5W?usp=sharing)  
 [Demo Colab](https://colab.research.google.com/drive/15NN5DZNQCFVkwy8P16bSpWY11iw2iv03?usp=sharing)  
 [Project Resources (Final Models and Data)](https://drive.google.com/drive/folders/1ESqVMTe4f85d9Sk5GHlsxbI8U770WLOc?usp=sharing)  
